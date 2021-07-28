@@ -1,0 +1,17 @@
+#scrollTop {
+    height: 55px;
+    width: 55px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+#judul {
+    margin-top: -200px;
+}
+
+#car {
+    height: 400px;
+    width: 100px;
+    opacity: 0.5;
+}

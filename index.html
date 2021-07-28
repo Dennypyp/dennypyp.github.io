@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="assets/img/book_lover.svg" alt="Icon-Aplus-Dessert">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="bg-warning">
+                    <img id="car" class="d-block w-100" src="assets/img/book_lover2.svg" alt="Book">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 id="judul" class="text-dark">Bookshelf Apps</h1>
+                        <p class="text-dark">Aplikasi Pembantu Inventaris Buku</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="mt-3 mb-3 col-12 col-lg-6 col-sm-12">
+                <div class="shadow card">
+                    <h4 class="card-header text-center bg-warning">Cari Buku</h4>
+                    <main class="card-body justify-content-center">
+                        <section>
+
+                            <form id="searchBook">
+                                <label class="form-label" for="searchBookKeyword">Judul/Penulis/Tahun</label>
+                                <div class="input-group">
+                                    <input class="form-control " id="searchBookKeyword" type="text">
+                                    <button class="btn btn-warning text-dark" type="submit">
+                                            <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div id="searchResult" class="book_list"></div>
+                        </section>
+                    </main>
+                </div>
+                <div class="mt-3 shadow card">
+                    <h4 class="card-header text-center bg-warning">Buku Baru</h4>
+                    <main class="card-body justify-content-center">
+                        <section>
+                            <form id="addBook">
+                                <div class="mb-2">
+                                    <label class="form-label" for="addBookTitle">Judul</label>
+                                    <input class="form-control" id="addBookTitle" type="text" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label" for="addBookAuthor">Penulis</label>
+                                    <input class="form-control" id="addBookAuthor" type="text" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label" for="addBookYear">Tahun</label>
+                                    <input class="form-control" id="addBookYear" type="number" required>
+                                </div>
+                                <div class="mb-2 form-check">
+                                    <input class="form-check-input" id="addBookIsComplete" type="checkbox">
+                                    <label class="form-check-label" for="addBookIsComplete">Selesai dibaca</label>
+                                </div>
+                                <div class="mt-3 d-grid">
+                                    <button class="btn btn-warning text-dark" type="submit">
+                                        Masukkan Buku <i class="ml-4 bi bi-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </section>
+                    </main>
+                </div>
+            </div>
+
+            <div class="mt-3 mb-3 col-12 col-lg-6 col-sm-12">
+                <div class="card shadow">
+                    <h3 class="card-header text-center bg-warning">Rak Buku</h3>
+                    <main class="card-body justify-content-center">
+                        <section class="mt-3">
+                            <h4 class="border-bottom border-warning text-center">Belum Selesai Dibaca</h4>
+                            <div id="unfinishBookList">
+
+                            </div>
+                        </section>
+
+                        <section class="mt-5">
+                            <h4 class="border-bottom border-warning text-center">Selesai Dibaca</h4>
+                            <div id="finishBookList">
+
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a id="scrollTop" href="#" class="btn btn-dark btn-lg rounded-circle float-right" role="button"><i id="up-icon" class="bi bi-chevron-up" ></i></a>
+    <footer class="p-4 text-center card-footer bg-warning text-dark">Copyright © 2021 | Denny Putra</footer>
+
+    <!-- Script -->
+    <script src="assets/js/data.js" type="text/javascript"></script>
+    <script src="assets/js/dom.js" type="text/javascript"></script>
+    <script src="assets/js/script.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- End Script -->
+
+</body>
+
+</html>
